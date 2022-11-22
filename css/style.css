@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+.wrapper {
+    font-family: 'Yuji Syuku', serif;
+    color: white;
+    text-shadow: 5px 5px #000;
+    margin: 0 auto;
+    background-image: url(../img/index.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: text_anime_on 4s ease-out forwards;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    transition: .3s;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+a:hover {
+    color: rgb(184, 250, 246);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+h1 {
+    font-size: 5rem;
+    writing-mode: vertical-rl;
+    font-weight: normal;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem 0 1rem;
+
+}
+
+@keyframes text_anime_on {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+div {
+    text-align: center;
+}
+
+.enter {
+    margin-top: 1rem;
+    font-size: 3rem;
+    color: #fff;
+}
+
+p {
+    font-size: 2.3rem;
+    padding-top: 1.7rem;
+}
